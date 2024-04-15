@@ -50,7 +50,7 @@ function getMovielist(movie) {
 //the final function is the most crucial one as it involves the get request
 function getAvailableFilms() {
     //we are going to use a GET request so as to get the film detais from our pakage.json
-    fetch("http://localhost:3000/films")
+    fetch("http://localhost:3001/films")
     .then(Response => Response.json())
     .then(movies => {
         movies.forEach(movie => {getMovielist(movie)})
